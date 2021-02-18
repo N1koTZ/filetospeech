@@ -1,10 +1,8 @@
 
-# Import the required module for text  
-# to speech conversion 
+# Import the required module for text, to speech conversion 
 from gtts import gTTS 
   
-# This module is imported so that we can  
-# play the converted audio 
+# This module is imported so that we can play the converted audio 
 import os
 
   
@@ -15,7 +13,7 @@ file = open("40k.txt", "r").read().replace("\n", " ")
 language = 'en'
 
 
-# Passing the text and language to the engine,  
+# Passing the text and language to the engine and speed  
 
 myobj = gTTS(text=str(file), lang=language, slow=False) 
   
